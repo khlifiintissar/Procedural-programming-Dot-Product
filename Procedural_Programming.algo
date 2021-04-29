@@ -1,0 +1,72 @@
+Procedural_Programming.algo
+PROCEDURE dot_product (V1,V2: ARRAY OF INTEGER, VAR PV : INTEGER)
+ VAR 
+ i : INTEGER ;
+  BEGIN 
+  PV=0;
+  i:=0;
+  WHILE (length(V1)=length(V2)) DO 
+   FOR i=0 TO length V1-1 STEP BY 1 DO 
+    PV := PV + V1[i]*V[i]
+    WRITE(PV)
+   END FOR 
+  END WHILE
+ALGORITHM Check_Orthogonal
+ VAR 
+ V1,V2 : ARRAY OF INTEGER [];
+ PV:INTEGER;
+ BEGIN
+ FOR i FROM 0 TO length V1-1 STEP BY 1 DO 
+    WRITE (V1[i])
+    READ  (V1[i])
+END FOR
+i:=0
+FOR i FROM 0 TO length V2-1 STEP BY DO
+    WRITE (V2[i])
+    READ (V2[i])
+END FOR
+dot_product(V1,V2,PV);
+ IF (PV=0) THEN
+ WRITE("V1 and V2 are orthogonal");
+ ELSE
+ WRITE("V1 and V2 are not orthogonal");
+ END IF 
+ END
+ // function
+
+
+ FUNCTION dot_product(V1,V2):INTEGER
+ VAR
+ i,PV : INTEGER;
+ BEGIN
+  PV=0
+  i:=0;
+  WHILE(length(V1)=length(V2)) DO 
+   FOR i FROM 0 TO length V1-1 DO 
+   PV := PV + V[i]*V2[i]
+   END FOR
+  END WHILE 
+  return PV;
+  END  
+  ALGORITHM Check_Orthogonal
+ VAR 
+ V1,V2 : ARRAY OF INTEGER [];
+ PV:INTEGER;
+ BEGIN
+ FOR i FROM 0 TO length V1-1 STEP BY 1 DO 
+    WRITE (V1[i])
+    READ  (V1[i])
+END FOR
+i:=0
+FOR i FROM 0 TO length V2-1 STEP BY DO
+    WRITE (V2[i])
+    READ (V2[i])
+END FOR
+PV := dot_product(V1,V2);
+ IF (PV=0) THEN
+ WRITE("V1 and V2 are orthogonal");
+ ELSE
+ WRITE("V1 and V2 are not orthogonal");
+ END IF 
+ END
+
